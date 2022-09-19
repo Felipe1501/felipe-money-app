@@ -10,7 +10,7 @@ const dataSchema = new mongoose.Schema({
     name: {type: String, required: true},
     value: {tupe: Number, min: 0, required: true},
     status: {type: String, required: false, uppercase: true,
-        enum: ['PAGO', 'PENDENTE', 'AGENDADE' ]}
+        enum: ['PAGO', 'PENDENTE', 'AGENDADO' ]}
 });
 
 const billingCycleSchema = new mongoose.Schema({
